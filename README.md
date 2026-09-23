@@ -1,5 +1,5 @@
-video link here: 
-Smart Library Management System
+video link here: https://drive.google.com/file/d/1JyITxm9xGqLm3fITqMIIgcgYv-U06RoF/view?usp=sharing
+# Smart Library Management System
 
 ## Project Overview
 The **Smart Library Management System** is a relational database project built using **PostgreSQL**. The project models a complete library ecosystem that enables librarians to track books, authors, registered members, and borrowing transactions. 
