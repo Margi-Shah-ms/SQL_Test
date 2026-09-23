@@ -42,14 +42,14 @@ The database consists of **4 core tables** designed with relational integrity:
 | membership_date  |    |    +------------------+
 +------------------+    |    |   TRANSACTIONS   |
                         |    +------------------+
-                        +---| transaction_id(PK|
+                        +--->| transaction_idPK |
                              | member_id (FK)   |
                              | book_id (FK)     |
                              | borrow_date      |
                              | return_date      |
                              | fine_amount      |
                              +------------------+
-
+```
 ### Table Breakdown
 1. **`authors`**: Stores biographical details of book authors.
 2. **`books`**: Contains catalog information, category classification, pricing, publication date, and real-time inventory counts (`available_copies`).
