@@ -23,11 +23,12 @@ It covers the full database lifecycle—from designing normalized schemas with p
 
 The database consists of **4 core tables** designed with relational integrity:
 
+```text
 +------------------+         +------------------+
 |     AUTHORS      |         |      BOOKS       |
 +------------------+         +------------------+
 | author_id (PK)   |<-------+| book_id (PK)     |
-| name             |    1:N  | title            |
+| name             |   1:N   | title            |
 | email            |         | author_id (FK)   |
 +------------------+         | category         |
                              | isbn             |
@@ -39,9 +40,9 @@ The database consists of **4 core tables** designed with relational integrity:
 | email            |    |             | 1:N
 | phone_number     |    | 1:N         |
 | membership_date  |    |    +------------------+
-                        |    |   TRANSACTIONS   |
++------------------+    |    |   TRANSACTIONS   |
                         |    +------------------+
-                        +--- | transaction_id(PK|
+                        +---| transaction_id(PK|
                              | member_id (FK)   |
                              | book_id (FK)     |
                              | borrow_date      |
